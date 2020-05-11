@@ -298,6 +298,100 @@ html {
   border-radius: 5px;
 }
 
+#about .about-content .skills-wrapper li {
+  margin: 20px 0;
+  list-style: none;
+}
+
+#about .about-content .skills-wrapper .bar {
+  background: #3b3737;
+  display: block;
+  height: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px #00A3E1b3;
+          box-shadow: 0 0 10px #00A3E1b3;
+}
+
+#about .about-content .skills-wrapper .bar span {
+  height: 8px;
+  float: left;
+  background: #00A3E1;
+}
+
+#about .about-content .skills-wrapper .html {
+  width: 90%;
+  -webkit-animation: html 3s;
+          animation: html 3s;
+}
+
+#about .about-content .skills-wrapper .css {
+  width: 75%;
+  -webkit-animation: css 3s;
+          animation: css 3s;
+}
+
+#about .about-content .skills-wrapper .javascript {
+  width: 30%;
+  -webkit-animation: javascript 3s;
+          animation: javascript 3s;
+}
+
+@-webkit-keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@-webkit-keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@-webkit-keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
 .site-pages .content {
   display: block;
   padding-top: 50px;
