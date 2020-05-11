@@ -1,0 +1,9 @@
+$black-color: #272727;
+$prim-color: #00A3E1;
+$white-color: #ffffff;
+$white-hover-color: #00A3E1;
+$page-color: #3b3737;
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}

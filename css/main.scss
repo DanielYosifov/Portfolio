@@ -1,0 +1,14 @@
+@import './reset';
+@import './typography';
+@import './variables';
+@import './aside';
+@import './header';
+@import './home';
+@import './about';
+
+.site-pages{
+    .content{
+        display: block;
+        padding-top: 50px;
+    }
+}
