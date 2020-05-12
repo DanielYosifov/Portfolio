@@ -104,7 +104,7 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   position: fixed;
-  z-index: 100;
+  z-index: 10;
   width: 100vw;
 }
 
@@ -120,7 +120,7 @@ html {
       -ms-grid-row-align: center;
       align-self: center;
   position: absolute;
-  z-index: 1;
+  z-index: 11;
   right: 1rem;
   top: 1rem;
   height: 20px;
@@ -191,23 +191,30 @@ html {
   overflow-y: hidden;
 }
 
-#home h1 {
+#home div {
+  position: relative;
+  top: 150px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#home div h1 {
   font-size: 3em;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 500;
   text-shadow: 0px 1px 1px rgba(0, 163, 225, 0.8);
   text-align: center;
-  margin-top: 2.5em;
 }
 
-#home h1 span {
+#home div h1 span {
   color: #00A3E1;
   font-weight: bold;
   text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8);
 }
 
-#home p {
+#home div p {
   font-size: 2em;
   color: #ffffff;
   margin: 2em auto;
