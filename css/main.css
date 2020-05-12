@@ -41,8 +41,8 @@ html {
 }
 
 .site-sidebar img {
-  width: 100%;
-  height: 35vh;
+  width: 200px;
+  height: 200px;
 }
 
 .site-sidebar .site-nav ul {
@@ -56,7 +56,7 @@ html {
 .site-sidebar .site-nav ul li a {
   display: block;
   padding: 1em 0;
-  text-align: center;
+  margin-left: 3em;
   width: 100%;
   text-decoration: none;
   color: #ffffff;
@@ -68,29 +68,6 @@ html {
 
 .site-sidebar .site-nav ul li a i {
   padding-right: 0.8em;
-}
-
-.site-sidebar .site-social {
-  position: absolute;
-  bottom: 30px;
-  padding-left: 70px;
-}
-
-.site-sidebar .site-social i {
-  color: #ffffff;
-  padding-left: 10px;
-}
-
-.site-sidebar .site-social i:hover {
-  color: #00A3E1;
-}
-
-.site-sidebar .sitebar-footer {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  text-align: center;
-  color: #ffffff;
 }
 
 .site-header {
@@ -180,10 +157,6 @@ html {
           transform: rotate(-45deg) translate(3px, -7px);
 }
 
-#home {
-  overflow: hidden;
-}
-
 #home .bg-image {
   background-image: url(../img/bgimg5.jpg);
   background-position: center center;
@@ -231,6 +204,8 @@ html {
   background-color: #3b3737;
   padding-left: 1em;
   padding-right: 1em;
+  display: block;
+  padding-top: 50px;
 }
 
 #about .about-header {
@@ -274,10 +249,10 @@ html {
   display: inline-block;
   position: absolute;
   z-index: -1;
-  top: 26px;
-  left: 100px;
+  top: 28px;
+  left: 90px;
   width: 150px;
-  height: 8px;
+  height: 0.3em;
   border: 1px solid #00A3E1;
 }
 
@@ -309,16 +284,16 @@ html {
 #about .about-content .skills-wrapper .bar {
   background: #3b3737;
   display: block;
-  height: 8px;
+  height: 1em;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 3px;
+  border-radius: 10px;
   overflow: hidden;
   -webkit-box-shadow: 0 0 10px #00A3E1b3;
           box-shadow: 0 0 10px #00A3E1b3;
 }
 
 #about .about-content .skills-wrapper .bar span {
-  height: 8px;
+  height: 0.9em;
   float: left;
   background: #00A3E1;
 }
@@ -327,18 +302,21 @@ html {
   width: 90%;
   -webkit-animation: html 3s;
           animation: html 3s;
+  border-radius: 10px;
 }
 
 #about .about-content .skills-wrapper .css {
   width: 75%;
-  -webkit-animation: css 3s;
-          animation: css 3s;
+  -webkit-animation: css 2.25s;
+          animation: css 2.25s;
+  border-radius: 10px;
 }
 
 #about .about-content .skills-wrapper .javascript {
   width: 30%;
-  -webkit-animation: javascript 3s;
-          animation: javascript 3s;
+  -webkit-animation: javascript 1.5s;
+          animation: javascript 1.5s;
+  border-radius: 10px;
 }
 
 @-webkit-keyframes html {
