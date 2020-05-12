@@ -187,13 +187,12 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 #home div {
   position: relative;
-  top: 150px;
+  top: 200px;
 }
 
 #home div h1 {
@@ -201,14 +200,14 @@ html {
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 500;
-  text-shadow: 0px 1px 1px rgba(0, 163, 225, 0.8);
+  text-shadow: 0px 0px 5px rgba(0, 163, 225, 0.8);
   text-align: center;
 }
 
 #home div h1 span {
   color: #00A3E1;
   font-weight: bold;
-  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8);
+  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.8);
 }
 
 #home div p {
@@ -386,10 +385,5 @@ html {
   100% {
     width: 30%;
   }
-}
-
-.site-pages .content {
-  display: block;
-  padding-top: 50px;
 }
 /*# sourceMappingURL=main.css.map */
