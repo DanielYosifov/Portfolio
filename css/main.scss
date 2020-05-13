@@ -1,6 +1,7 @@
 @import './reset';
 @import './typography';
 @import './variables';
+@import './transition';
 @import './aside';
 @import './header';
 @import './home';
@@ -12,3 +13,7 @@
 //         padding-top: 50px;
 //     }
 // }
+
+body{
+    background-color: $page-color;
+}

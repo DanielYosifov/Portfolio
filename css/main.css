@@ -18,6 +18,67 @@ html {
   font: 14px/1.6 "Montserrat", sans-serif;
 }
 
+.animate_content {
+  -webkit-animation: animate 3s ease;
+          animation: animate 3s ease;
+}
+
+.fadeIn {
+  z-index: 10;
+}
+
+@-webkit-keyframes animate {
+  10% {
+    -webkit-transform: scale(1, 0.002);
+            transform: scale(1, 0.002);
+  }
+  35% {
+    -webkit-transform: scale(0.2, 0.002);
+            transform: scale(0.2, 0.002);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(0.2, 0.002);
+            transform: scale(0.2, 0.002);
+    opacity: 0;
+  }
+  85% {
+    -webkit-transform: scale(1, 0.002);
+            transform: scale(1, 0.002);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes animate {
+  10% {
+    -webkit-transform: scale(1, 0.002);
+            transform: scale(1, 0.002);
+  }
+  35% {
+    -webkit-transform: scale(0.2, 0.002);
+            transform: scale(0.2, 0.002);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(0.2, 0.002);
+            transform: scale(0.2, 0.002);
+    opacity: 0;
+  }
+  85% {
+    -webkit-transform: scale(1, 0.002);
+            transform: scale(1, 0.002);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
 .site-sidebar {
   display: block;
   width: 200px;
@@ -55,8 +116,7 @@ html {
 
 .site-sidebar .site-nav ul li a {
   display: block;
-  padding: 1em 0;
-  margin-left: 3em;
+  padding: 1em 0 1em 3em;
   width: 100%;
   text-decoration: none;
   color: #ffffff;
@@ -166,7 +226,7 @@ html {
   opacity: 1;
 }
 
-#home div h1 {
+#home .home-header h1 {
   position: absolute;
   top: 40vh;
   left: 0;
@@ -179,13 +239,13 @@ html {
   text-align: center;
 }
 
-#home div h1 span {
+#home .home-header h1 span {
   color: #00A3E1;
   font-weight: bold;
   text-shadow: 0px 0px 10px rgba(39, 39, 39, 0.8);
 }
 
-#home div p {
+#home .home-header p {
   position: absolute;
   top: 70vh;
   left: 0;
@@ -371,5 +431,9 @@ html {
   100% {
     width: 30%;
   }
+}
+
+body {
+  background-color: #3b3737;
 }
 /*# sourceMappingURL=main.css.map */
