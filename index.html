@@ -27,7 +27,7 @@
                 </li>
 
                 <li class="menu-nav-item">
-                    <a href="#about" id="defaultOpen" class="links about btn_nav about_link" onclick="openPage(event, 'about')"> <i class="fas fa-user"></i>About</a>
+                    <a href="#about" class="links about btn_nav about_link" onclick="openPage(event, 'about')"> <i class="fas fa-user"></i>About</a>
                 </li>
 
                 <!-- <li class="menu-nav-item">
@@ -39,7 +39,7 @@
                 </li>
 
                 <li class="menu-nav-item">
-                    <a href="#contact" class="links contact btn_nav contact_link" onclick="openPage(event, 'contact')"> <i class="fas fa-envelope"></i>Contact</a>
+                    <a href="#contact" id="defaultOpen" class="links contact btn_nav contact_link" onclick="openPage(event, 'contact')"> <i class="fas fa-envelope"></i>Contact</a>
                 </li>
             </ul>
         </nav>
@@ -78,8 +78,8 @@
     <!-- About page -->
     <div class="page__style about">
         <div class="page__description">
-            <div id="about" class="content">
-                <div class="about-header">
+            <div id="about" class="content page">
+                <div class="about page-header">
                     <p>About Me</p>
                     <i class="fas fa-user fa-xl"></i>
                 </div>
@@ -159,13 +159,38 @@
     <!-- <div id="resume" class="content"><p>Resume</p></div> -->
     <div class="page__style portfolio">
         <div class="page__description">
-            <div id="portfolio" class="content"><p>Portfolio</p></div>
+            <div id="portfolio" class="content page">
+                <div class="portfolio page-header">
+                    <p>Portfolio</p>
+                    <i class="fas fa-briefcase fa-xl"></i>
+                </div>
+            </div>
         </div>
     </div>
     
     <div class="page__style contact">
         <div class="page__description">
-            <div id="contact" class="content"><p>Contact</p></div>
+            <div id="contact" class="content page">
+                <div class="contact page-header">
+                    <p>Contact</p>
+                    <i class="fas fa-envelope fa-xl"></i>
+                </div>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="subject">Subject</label>
+                    <div class="submit">
+                        <textarea name="subject" id="subject"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     

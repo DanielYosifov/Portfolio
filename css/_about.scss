@@ -1,24 +1,9 @@
 #about{
-    background-color: $page-color;
-    padding-left: 1em;
-    padding-right: 1em;
-    display: block;
-    padding-top: 50px;
-
-    .about-header{
-        color: $prim-color;
-        font-size: 3em;
-        font-weight: bold;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
     
     .about-content{
         padding-top: 1em;
         color: $white-color;
         font-size: 1.2em;
-        border-top: 2px dashed $prim-color;
         display: flex;
         flex-flow: column;
 

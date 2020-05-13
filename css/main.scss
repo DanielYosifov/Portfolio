@@ -6,14 +6,25 @@
 @import './header';
 @import './home';
 @import './about';
-
-// .site-pages{
-//     .content{
-//         display: block;
-//         padding-top: 50px;
-//     }
-// }
+@import './contact';
 
 body{
     background-color: $page-color;
+}
+
+.page{
+    padding-left: 1em;
+    padding-right: 1em;
+    display: block;
+    padding-top: 50px;
+}
+
+.page-header{
+    color: $prim-color;
+    font-size: 3em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dashed $prim-color;
 }
