@@ -89,58 +89,73 @@
 
         // skill bars
 
-        .skills-wrapper{
-            li{
-                margin: 20px 0;
-                list-style: none;
-            }
-
-            .bar{
-                background: $page-color;
-                display: block;
-                height: 1em;
-                border: 1px solid rgba($color: #000000, $alpha: 0.3);
-                border-radius: 10px;
-                overflow: hidden;
-                box-shadow: 0 0 10px #00A3E1b3;
-            }
-
-            .bar span{
-                height: 0.9em;
-                float: left;
-                background: $prim-color;
-            }
-
-            .html{
-                width: 90%;
-                animation: html 3s;
-                border-radius: 10px;
-            }
-            
-            .css{
-                width: 75%;
-                animation: css 2.25s;
-                border-radius: 10px;
-            }
-            
-            .javascript{
-                width: 30%;
-                animation: javascript 1.5s;
-                border-radius: 10px;
-            }
-
-            @keyframes html{
-                0%{ width: 0%;}
-                100%{ width: 90%;}
-            }
-            @keyframes css{
-                0%{ width: 0%;}
-                100%{ width: 75%;}
-            }
-            @keyframes javascript{
-                0%{ width: 0%;}
-                100%{ width: 30%;}
-            }
+        .container {
+            height: 300px;
+            max-width: 100%;
+            width: 100%;
+        }
+        
+        .progress-bar {
+            margin: 20px 0 10px;
+            overflow: hidden;
+        }
+        
+        .progress-title-holder {
+            padding-bottom: 7px;
+            position: relative;
+            margin: 5px 0;
+            color: $white-color;
+        }
+        
+        .progress-title {
+            z-index: 100;
+            font-weight: bold;
+        }
+        
+        .progress-number-wrapper {
+            width: 100%;
+            z-index: 10;
+        }
+        
+        .progress-number-mark {
+            margin-bottom: 4px;
+            border-radius: 3px;
+            background-color: $prim-color;
+            padding: 0 8px;
+            position: absolute;
+            bottom: 0;
+            transform: translateX(-65%);
+        }
+        
+        .progress-number-wrapper,
+        .progress-number-mark {
+            line-height: 24px;
+            height: 24px;
+            color: $white-color;
+        }
+        
+        .down-arrow {
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid $prim-color;
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            transform: translateX(-50%);
+        }
+        
+        .progress-content-outter {
+            height: 1em;
+            background-color: $white-color;
+            border-radius: 10px;
+        }
+        
+        .progress-content {
+            height: 1em;
+            background-color: $prim-color;
+            border-radius: 10px;
+            width: 0%;
+            /* Initial value */
         }
     }
 }

@@ -336,101 +336,75 @@ html {
   border-radius: 5px;
 }
 
-#about .about-content .skills-wrapper li {
-  margin: 20px 0;
-  list-style: none;
+#about .about-content .container {
+  height: 300px;
+  max-width: 100%;
+  width: 100%;
 }
 
-#about .about-content .skills-wrapper .bar {
-  background: #3b3737;
-  display: block;
-  height: 1em;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
+#about .about-content .progress-bar {
+  margin: 20px 0 10px;
   overflow: hidden;
-  -webkit-box-shadow: 0 0 10px #00A3E1b3;
-          box-shadow: 0 0 10px #00A3E1b3;
 }
 
-#about .about-content .skills-wrapper .bar span {
-  height: 0.9em;
-  float: left;
-  background: #00A3E1;
+#about .about-content .progress-title-holder {
+  padding-bottom: 7px;
+  position: relative;
+  margin: 5px 0;
+  color: #ffffff;
 }
 
-#about .about-content .skills-wrapper .html {
-  width: 90%;
-  -webkit-animation: html 3s;
-          animation: html 3s;
+#about .about-content .progress-title {
+  z-index: 100;
+  font-weight: bold;
+}
+
+#about .about-content .progress-number-wrapper {
+  width: 100%;
+  z-index: 10;
+}
+
+#about .about-content .progress-number-mark {
+  margin-bottom: 4px;
+  border-radius: 3px;
+  background-color: #00A3E1;
+  padding: 0 8px;
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateX(-65%);
+          transform: translateX(-65%);
+}
+
+#about .about-content .progress-number-wrapper,
+#about .about-content .progress-number-mark {
+  line-height: 24px;
+  height: 24px;
+  color: #ffffff;
+}
+
+#about .about-content .down-arrow {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #00A3E1;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#about .about-content .progress-content-outter {
+  height: 1em;
+  background-color: #ffffff;
   border-radius: 10px;
 }
 
-#about .about-content .skills-wrapper .css {
-  width: 75%;
-  -webkit-animation: css 2.25s;
-          animation: css 2.25s;
+#about .about-content .progress-content {
+  height: 1em;
+  background-color: #00A3E1;
   border-radius: 10px;
-}
-
-#about .about-content .skills-wrapper .javascript {
-  width: 30%;
-  -webkit-animation: javascript 1.5s;
-          animation: javascript 1.5s;
-  border-radius: 10px;
-}
-
-@-webkit-keyframes html {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 90%;
-  }
-}
-
-@keyframes html {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 90%;
-  }
-}
-
-@-webkit-keyframes css {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 75%;
-  }
-}
-
-@keyframes css {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 75%;
-  }
-}
-
-@-webkit-keyframes javascript {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 30%;
-  }
-}
-
-@keyframes javascript {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 30%;
-  }
+  width: 0%;
+  /* Initial value */
 }
 
 body {
