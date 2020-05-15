@@ -23,23 +23,19 @@
         <nav class="site-nav">
             <ul class="menu-nav">
                 <li class="menu-nav-item">
-                    <a href="#home"  class="links home btn_nav home_link" onclick="openPage(event, 'home')"> <i class="fas fa-home"></i>Home</a>
+                    <a href="#home" id="defaultOpen" class="links home btn_nav home_link" onclick="openPage(event, 'home')"> <i class="fas fa-home"></i>Home</a>
                 </li>
 
                 <li class="menu-nav-item">
                     <a href="#about" class="links about btn_nav about_link" onclick="openPage(event, 'about')"> <i class="fas fa-user"></i>About</a>
                 </li>
 
-                <!-- <li class="menu-nav-item">
-                    <a href="#resume" class="links resume" onclick="openPage(event, 'resume')"> <i class="fas fa-file"></i>Resume</a>
-                </li> -->
-
                 <li class="menu-nav-item">
-                    <a href="#portfolio" class="links portfolio btn_nav portfolio_link" onclick="openPage(event, 'portfolio')"> <i class="fas fa-briefcase"></i>Portfolio</a>
+                    <a href="#portfolio"  class="links portfolio btn_nav portfolio_link" onclick="openPage(event, 'portfolio')"> <i class="fas fa-briefcase"></i>Portfolio</a>
                 </li>
 
                 <li class="menu-nav-item">
-                    <a href="#contact" id="defaultOpen" class="links contact btn_nav contact_link" onclick="openPage(event, 'contact')"> <i class="fas fa-envelope"></i>Contact</a>
+                    <a href="#contact"  class="links contact btn_nav contact_link" onclick="openPage(event, 'contact')"> <i class="fas fa-envelope"></i>Contact</a>
                 </li>
             </ul>
         </nav>
@@ -156,7 +152,7 @@
 
     <!-- About page end -->
 
-    <!-- <div id="resume" class="content"><p>Resume</p></div> -->
+    <!-- Portfolio -->
     <div class="page__style portfolio">
         <div class="page__description">
             <div id="portfolio" class="content page">
@@ -164,10 +160,85 @@
                     <p>Portfolio</p>
                     <i class="fas fa-briefcase fa-xl"></i>
                 </div>
+                <div class="portfolio-content">
+                    <div class="portfolio-item">
+                        <img src="./img/portfolio-1.jpg" alt="">
+                        <div class="portfolio-btns">
+                            <a href="#!" class="portfolio-btn">
+                                <i class="fas fa-eye fa-lg"></i> Prewiew
+                            </a>
+                            <a href="#!" class="portfolio-btn">
+                                <i class="fab fa-github fa-lg"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <img src="./img/portfolio-2.jpg" alt="">
+                        <div class="portfolio-btns">
+                            <a href="#!" class="portfolio-btn">
+                                <i class="fas fa-eye fa-lg"></i> Prewiew
+                            </a>
+                            <a href="#!" class="portfolio-btn">
+                                <i class="fab fa-github fa-lg"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <img src="./img/portfolio-3.jpg" alt="">
+                        <div class="portfolio-btns">
+                            <a href="#!" class="portfolio-btn">
+                                <i class="fas fa-eye fa-lg"></i> Prewiew
+                            </a>
+                            <a href="#!" class="portfolio-btn">
+                                <i class="fab fa-github fa-lg"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <img src="./img/portfolio-4.jpg" alt="">
+                        <div class="portfolio-btns">
+                            <a href="#!" class="portfolio-btn">
+                                <i class="fas fa-eye fa-lg"></i> Prewiew
+                            </a>
+                            <a href="#!" class="portfolio-btn">
+                                <i class="fab fa-github fa-lg"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <img src="./img/portfolio-5.jpg" alt="">
+                        <div class="portfolio-btns">
+                            <a href="#!" class="portfolio-btn">
+                                <i class="fas fa-eye fa-lg"></i> <span>Prewiew</span>
+                            </a>
+                            <a href="#!" class="portfolio-btn">
+                                <i class="fab fa-github fa-lg"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <img src="./img/portfolio-6.jpg" alt="">
+                        <div class="portfolio-btns">
+                            <a href="#!" class="portfolio-btn">
+                                <i class="fas fa-eye fa-lg"></i> Prewiew
+                            </a>
+                            <a href="#!" class="portfolio-btn">
+                                <i class="fab fa-github fa-lg"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    
+    <!-- Portfolio end -->
+
+    <!-- Contact -->
     <div class="page__style contact">
         <div class="page__description">
             <div id="contact" class="content page">
@@ -193,6 +264,7 @@
             </div>
         </div>
     </div>
+    <!-- Contact end -->
     
     </section>
 
